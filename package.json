@@ -1,16 +1,24 @@
 {
+  "homepage": "https://Gk-learner.github.io/node-projectl",
   "name": "e-dashboard",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^8.0.1",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
